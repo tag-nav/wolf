@@ -464,7 +464,7 @@ if [ $INSTALL_VISION == "y" ]; then
 
    func_echo "Cloning plugin vision..."
    cd $WOLF_PATH
-   git clone -b main https://gitlab.iri.upc.edu/mobile_robotics/wolf_projects/wolf_lib/plugins/vision.git
+   git clone -b tag-nav https://github.com/tag-nav/wolf_vision.git vision
    cd vision
 
    func_echo "Compiling plugin vision..."
@@ -497,7 +497,7 @@ if [ $INSTALL_VISION == "y" ]; then
 
       func_echo "Installing plugin apriltag dependencies..."
       cd $DEPS_PATH
-      git clone https://github.com/AprilRobotics/apriltag apriltaglib
+      git clone https://github.com/tag-nav/multiscale-marker-detection.git apriltaglib
       cd apriltaglib
       mkdir -p build && cd build
       cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -507,7 +507,7 @@ if [ $INSTALL_VISION == "y" ]; then
 
       func_echo "Cloning plugin apriltag..."
       cd $WOLF_PATH
-      git clone -b main https://gitlab.iri.upc.edu/mobile_robotics/wolf_projects/wolf_lib/plugins/apriltag.git
+      git clone -b tag-nav https://github.com/tag-nav/wolf_apriltag.git apriltag
       cd apriltag
 
       func_echo "Compiling plugin apriltag..."
