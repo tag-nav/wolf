@@ -1,0 +1,18 @@
+[submodule "gnss"]
+	path = gnss
+	url = ./apriltag/
+[submodule "apriltag"]
+	path = apriltag
+	url = ./apriltag/
+[submodule "imu"]
+	path = imu
+	url = ./imu/
+[submodule "laser"]
+	path = laser
+	url = ./laser/
+[submodule "vision"]
+	path = vision
+	url = ./vision/
+[submodule "wolf"]
+	path = wolf
+	url = ./wolf/
